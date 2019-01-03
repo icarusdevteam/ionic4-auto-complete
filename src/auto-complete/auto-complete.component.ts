@@ -1,4 +1,4 @@
-import {Component, Input, Output, EventEmitter, TemplateRef, ViewChild, HostListener, ElementRef} from '@angular/core';
+import {Component, Input, Output, EventEmitter, TemplateRef, ViewChild, HostListener, ElementRef, forwardRef} from '@angular/core';
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
 
 import {Platform} from '@ionic/angular';
@@ -12,12 +12,10 @@ import {AutoCompleteOptions} from '../auto-complete-options.model';
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: AutoCompleteComponent,
+      useExisting: forwardRef(() => AutoCompleteComponent),
       multi: true
     }
-  ]
-})
-@Component({
+  ],
   selector:  'ion-auto-complete',
   templateUrl: 'auto-complete.component.html'
 })
