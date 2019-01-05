@@ -19,7 +19,7 @@
   "module": "ionic4-auto-complete.js",
   "typings": "ionic4-auto-complete.d.ts",
   "peerDependencies": {
-    "@angular/core": "7.0.4",
+    "@angular/core": ">= 7.0.4 < 7.2",
     "rxjs": "6.3.3",
     "zone.js": "0.8.26"
   }
