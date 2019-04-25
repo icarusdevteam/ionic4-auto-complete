@@ -130,7 +130,6 @@ export class AutoCompleteComponent implements ControlValueAccessor {
    *
    * @param event
    *
-   * @private
    */
   @HostListener('document:click', ['$event'])
   private _documentClickHandler(event:Event):void {
@@ -148,7 +147,6 @@ export class AutoCompleteComponent implements ControlValueAccessor {
    *
    * @param selection
    *
-   * @private
    */
   private _getFormValue(selection:any): any {
     if (selection == null) {
@@ -166,7 +164,6 @@ export class AutoCompleteComponent implements ControlValueAccessor {
    *
    * @param el
    *
-   * @private
    */
   private _getPosition(el):any {
     let xPos = 0;
