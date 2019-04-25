@@ -5,6 +5,11 @@ ion-auto-complete {
 
   ion-searchbar {
     padding: 1px !important;
+
+  }
+
+  .searchbar-input-container button.searchbar-clear-button {
+    right: 19px !important; // don't obscure the loading anigif
   }
 
   ul {
