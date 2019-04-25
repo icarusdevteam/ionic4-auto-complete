@@ -32,6 +32,7 @@
 <ion-searchbar
         #searchbarElem
         [animated]="options.animated == null ? defaultOpts.animated : options.animated"
+        (keyup.enter)="enterPressed($event)"
         (ionInput)="getItems($event)"
         (tap)="handleTap($event)"
         [(ngModel)]="keyword"

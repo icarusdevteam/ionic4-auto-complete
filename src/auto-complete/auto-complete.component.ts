@@ -207,6 +207,16 @@ export class AutoCompleteComponent implements ControlValueAccessor {
   }
 
   /**
+   * Handle ENTER key to select the most-completed item
+   *
+   * @param event
+   */
+  public enterPressed(event?) {
+    // Fill the top item
+    if(this.suggestions.length > 0) this.selectItem(this.suggestions[0]);
+  }
+
+  /**
    * Get items for auto-complete
    *
    * @param event
