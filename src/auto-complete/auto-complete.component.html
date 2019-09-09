@@ -11,11 +11,10 @@
                       [slot]="removeButtonSlot"></ion-icon>
         </ion-button>
     </div>
-</div>
+</div><!-- (tap)="handleTap($event)" -->
 <ion-input
         #inputElem
         (keyup)="getItems($event)"
-        (tap)="handleTap($event)"
         [(ngModel)]="keyword"
         (ngModelChange)="updateModel()"
         [placeholder]="options.placeholder == null ? defaultOpts.placeholder : options.placeholder"
@@ -28,13 +27,12 @@
         (ionFocus)="onFocus()"
         (ionBlur)="onBlur()"
 >
-</ion-input>
+</ion-input><!-- (tap)="handleTap($event)" -->
 <ion-searchbar
         #searchbarElem
         [animated]="options.animated == null ? defaultOpts.animated : options.animated"
         (keyup.enter)="enterPressed($event)"
         (ionInput)="getItems($event)"
-        (tap)="handleTap($event)"
         [(ngModel)]="keyword"
         (ngModelChange)="updateModel()"
         [cancelButtonIcon]="options.cancelButtonIcon == null ? defaultOpts.cancelButtonIcon : options.cancelButtonIcon"

@@ -12,7 +12,7 @@ export class AutoCompleteOptions {
   public noItems:string = '';
   public placeholder:string = 'Search';
   public searchIcon:string = 'search';
-  public showCancelButton:boolean = false;
+  public showCancelButton:string = 'never';
   public spellcheck:'on'|'off' = 'off';
   public type:string = 'search';
   public value:string = '';
