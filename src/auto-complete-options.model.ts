@@ -15,6 +15,7 @@ export class AutoCompleteOptions {
   public showCancelButton:boolean = false;
   public spellcheck:'on'|'off' = 'off';
   public type:string = 'search';
+  public inputmode:string = 'text';
   public value:string = '';
 
   constructor() {
